@@ -1,0 +1,38 @@
+*{    
+    font-family:monospace;
+    margin: auto;
+    margin-top: 10px;
+    
+
+}
+body {
+    background-image: url(ghostbusters_1984.jpeg) ;
+    /* background-image: url(images-original.png); */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 150% 175%;
+    /* background-size: cover; */
+}
+
+header {
+    text-align:center;
+    color: white;
+}
+
+.first  {
+    margin-top: 0px;
+}
+
+.quote {
+    background-color: rgb(195, 218, 209);
+    padding: 10px;
+    max-width: 800px;
+}
+
+.speaker {
+    font-weight: bold;
+}
+
+.directions {
+    font-style: italic;
+}
