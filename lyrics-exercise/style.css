@@ -9,7 +9,7 @@
 .lyrics {
     display: inline-block;
     width: 45%;
-    text-align: left;
+    text-align: center;
     vertical-align: top; 
 }
 
@@ -21,6 +21,6 @@
 }
 
 img {
-    box-shadow: 0 0 20px rgb(223,231, 24);
+    box-shadow: 0 0 50px rgb(255, 70,60);
     width: 75%;
 }
