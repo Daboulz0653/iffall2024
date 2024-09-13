@@ -1,0 +1,59 @@
+*{
+    font-family: "Ubuntu", system-ui;
+    margin: 10px;
+}
+
+p{
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-indent: 20px;
+}
+
+section{    
+    padding: 20px 0 0 10px;
+}
+
+
+.header{
+    color: #E95420;
+    font-size: 24px;
+}
+
+.subheader {
+    color: #806678;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+
+/* from Ubuntu google fonts embed page */
+
+.ubuntu-light {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 300;
+    font-style: italic;
+  }
