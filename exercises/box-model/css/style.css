@@ -1,8 +1,8 @@
 .box-layers{
     background-color: #eeeeee;
-    padding: 2rem;
+    padding: 2rem 1rem 4rem 1rem;
     border-top: 10px solid #dddddd;
-    margin: 2rem 1rem 4rem 1rem;
+    margin: 4rem 0;
 }
 
 .h2-wrapper{
