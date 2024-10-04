@@ -1,0 +1,109 @@
+*{
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+h1{
+    font-size: 80px;
+    margin: 0;
+    line-height: 1;
+}
+
+h2{
+    margin-top: 16px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+h3{
+    margin: 0px;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 32px;
+
+}
+
+h4{
+    margin: 2px 0 8px 0;
+    font-size: 20px;
+}
+
+h5{
+    font-size: 26px;
+    font-weight: 200;
+    margin: 0;
+    line-height: 1.4;
+}
+
+p{
+    margin: 0px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.39;
+}
+
+.content{
+    padding: 38px 385px;
+}
+
+/* ################# Header ################# */
+header{
+    text-align: center;
+    padding-top: 166px;
+    background-image: url(../images/skynews-arctic-ocean-norway_6319380.jpg);
+    opacity: 1;
+    padding-bottom: 166px;
+
+}
+
+/* ################# First Section ################# */
+.firstsection{
+    background-color: rgba(169,192,208, 1);
+}
+section div img {
+    float: right;
+    margin: 0 0 25px 40px;
+    width: 400px;
+    
+}
+
+/* ################# Second Section: Grid ################# */
+.secondsection{
+    background-color: rgba(190, 207, 220, 1);
+}
+.flexgrid{
+    display: flex;
+}
+
+.flexgrid ul{
+    padding: 0;
+    list-style-type: none;
+    width: 450px;
+    margin: 0 32px 5px 0 ;
+}
+.flexgrid li{
+    margin: 0 0 38px 0;
+}
+.flexgrid img{
+    float: left;
+    margin: 0 11px 0 0;
+    width: 200px;
+}
+
+/* ################# Third Section ################# */
+.thirdsection{
+    background-color: rgba(214, 226, 234, 1);
+}
+.thirdsection .content{
+    text-align: center;
+    padding: 40px 510px 100px 510px;
+    margin: 0;
+    
+}
+
+/* ################# Footer ################# */
+.footer{ 
+    background-color: rgba(232, 238, 242, 1);
+}
+.footer p{
+    margin-top: 3px ;
+}
