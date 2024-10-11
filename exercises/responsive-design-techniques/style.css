@@ -4,7 +4,8 @@
 
 body{
     margin: auto;
-    width: min(800px, 90%);
+    max-width: 800px;
+    width: 90%;
 }
 
 ul{
