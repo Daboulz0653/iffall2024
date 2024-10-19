@@ -39,6 +39,7 @@ section{
     margin: 0 auto;
 }
 
+/***************CHECKLIST THINGS */
 form{
     margin: 0;
     padding: 0;
@@ -155,7 +156,7 @@ img {
 /*********************SIMPLE RECIPE********************/
 .simplerecipe{
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 30px;
 }
 .simplerecipe .contents{
     display: flex;
