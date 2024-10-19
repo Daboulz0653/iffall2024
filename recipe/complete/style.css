@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box; 
+    font-family: "playfair-display", serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 10vw;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+h2{
+    margin: 0 0 20px 0;
+    
+}
+
+h3{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+h5{
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+section{
+    margin: 0 auto;
+}
+
+.contents{
+    width: 70%;
+    margin: 0 auto;
+}
+
+form{
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    display: flex;
+    align-items: baseline;
+    padding-bottom: px;
+}
+
+input{
+    margin-right: 5px;
+}
+
+/*********************HEADER********************/
+header {
+    background-image: url("images/moist-banana-bread.jpg");
+    background-size: cover; 
+    text-align: center;
+    padding-top: 175px;
+    padding-bottom: 175px;
+    color: white;
+}
+
+button{
+    margin: 30px 20px;
+    background-color: rgb(53,2,0);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(255, 233, 218);
+    color: black;
+
+    border: none;
+
+}
+
+header a{
+    text-decoration: none;
+}
+
+.subhead{
+    display: flex;
+    justify-content: center; /* Center align the items */
+    gap: 30px; /* Space between the items */
+    margin: 0;
+
+}
+/*********************INTRODUCTION AND TRANSITION********************/
+.introduction, .transition{
+    background-color: rgb(255, 233, 218);
+}
+.introduction .contents, .transition .contents{
+    width: 50%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/*********************PICTURE RECIPE********************/
+.picturerecipe .contents{
+    display: grid;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom-style: solid;
+    border-left-color:lightgray;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 100%; 
+    height: auto;
+    padding: 0;
+
+}
+
+.picturerecipe .contents .row:first-child{
+    align-items: flex-start;
+}
+
+.text2{
+    padding: 20px;
+}
+
+.picturerecipe .contents .row:first-child img{
+    padding-top: 46px;
+}
+
+
+
+
+
+.text{
+    padding: 20px;
+    
+}
+
+.picturerecipe .contents .row:last-child{
+    border-bottom-style: none;
+}
+
+/*********************SIMPLE RECIPE********************/
+.simplerecipe{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.simplerecipe .contents{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 30px; */
+    gap: 40px;
+}
+
+.ingredients{
+    width: 45%;
+}
+.instructions{
+    border-left-style: solid;
+    border-left-color:lightgray;
+    width: 45%;
+    padding-left: 20px;
+}
+
+.instructions ol{
+    margin: 0;
+}
+.instructions li{
+    padding-bottom: 10px;
+}
+
+
+
+/* *********************MEDIAS******************** */
+@media (max-width: 1000px){
+    .contents{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h3{
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    h5{
+        font-size: 14px;
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width: 700px){
+
+    h3{
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    h5{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    span{
+        font-size: 14px;
+    }
+
+    .instructions li{
+        font-size: 14px;
+    }
+    .subhead {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center align items in the column */
+            gap: 0;
+    }
+
+    .introduction .contents, .transition .contents{
+        width: 70%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    
+    .picturerecipe .contents{
+        display: grid;
+        flex-wrap: wrap;
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .row {
+        grid-template-columns: 1fr; /* Stack the columns */
+        border-bottom-style: solid;
+        border-left-color:lightgray;
+    }
+    
+    .text, img {
+        padding: 10px;
+    }
+    .text2{
+        padding: 0;
+    }
+    .picturerecipe .contents .row:first-child img{
+        padding-top: 15px;
+    }
+
+    .simplerecipe .contents{
+        gap: 40px;
+    }
+    .instructions{
+        border-left-style: none;
+        width: 100%;
+        padding: 0;
+ 
+    }
+    .ingredients{
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px){
+    .contents{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .picturerecipe .contents{
+        padding: 10px;
+    }
+
+    .text2, .text, img{
+        padding: 0;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    h3{
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    
+
+    .subhead {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 0;
+        margin-bottom: 10px;
+    }
+
+    button{
+        font-size: 12px;
+        margin: 10px 20px;
+    }
+}
+
+
+
+
