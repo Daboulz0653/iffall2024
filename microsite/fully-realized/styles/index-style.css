@@ -1,0 +1,71 @@
+body{
+    background-color: #3f0f0f;
+}
+
+/* https://stackoverflow.com/questions/10522137/allowing-for-overflow-on-the-y-axis-while-hiding-overflow-on-the-x-axis */
+
+header nav li img{
+    display: none;
+}
+#cover-page{
+    position: relative;
+    overflow: visible;
+}
+
+#cover-page .plaid-cover{
+    position: absolute;
+    z-index: -1000;
+    margin: -1500px 0 0 -500px;
+    width: 150%;
+    transform: rotate(65deg);
+} 
+
+
+ 
+
+#cover-page .text-cover{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#cover-page .scroll-button{
+    display: block;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 10px;
+    transition: background-color 400ms ease-in-out;
+    text-align: center;
+}
+
+#cover-page .scroll-button i{
+    color: rgb(239, 233, 80) ;
+    font-size: 40px;
+
+}
+
+#cover-page .scroll-button:hover{
+    background-color:#601D1D;
+
+}
+
+#info{
+    margin: 200px 100px 0 100px;
+    margin-top: 190px;
+}
+
+#info .text{
+    margin-top: -100px;
+
+}
+#info p{
+    width: 50%;
+    color: rgb(237, 234, 157);
+    margin-left: 50%;
+    font-size: 20px;
+}
+

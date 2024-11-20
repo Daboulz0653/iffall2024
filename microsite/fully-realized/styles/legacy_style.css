@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(19, 27, 23);
+}
+
+/* https://stackoverflow.com/questions/10522137/allowing-for-overflow-on-the-y-axis-while-hiding-overflow-on-the-x-axis */
+header{
+    background-image: linear-gradient(to top, rgb(19, 27, 23, 0), rgb(19, 27, 23,1));
+}
+
+#cover-page{
+    position: relative;
+    overflow: visible;
+}
+
+#cover-page .plaid-cover{
+    position: absolute;
+    z-index: -1000;
+    margin: -600px auto;
+    width: 100%;
+} 
+
+
+
+#cover-page .page-title{
+    font-size: 150px;
+    display: block;
+    margin: 100px auto;
+    text-align: center;
+    color: rgb(239, 233, 80);
+}
+
+
+#info .row {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 150px; 
+    margin: 20px auto; 
+    justify-content: center;
+}
+
+.row img {
+    max-width: 33%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.row .text {
+    margin-top: 50px;
+    flex: 1; 
+    color: rgb(237, 234, 157); 
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 550px;
+}

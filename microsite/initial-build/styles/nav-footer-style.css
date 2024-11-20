@@ -1,38 +1,48 @@
-
-html{
+html {
     scroll-behavior: smooth;
     margin: 0;
-    overflow-x: hidden ;
+    overflow-x: hidden;
 }
-body{
+
+body {
     margin: 0;
 }
 
-nav{
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(96,29,29,1));
-    height: 120px;
+header{
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(96, 29, 29, 1));
+    height: 100px;
     padding: 0;
-
 }
-nav ul{
+nav {
+    width: 66.66%; /* 2/3 of the page width */
+    margin: 0 auto; /* Centers the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-
+    width: 100%; /* Takes up the full width of the container */
 }
-nav ul li a{
+
+nav ul li a {
     color: rgb(236, 232, 130);
     text-decoration: none;
     font-size: 24px;
-    margin: 10x 10px 0px 10px;
+    margin: 10px 10px 0px 10px;
 }
 
-nav ul li a img{
+nav ul li a img {
     width: 70px;
 }
+
 
 #footer {
     margin-top: 80px;
