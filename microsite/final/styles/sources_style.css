@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(54, 38, 39);
+    overflow: hidden;
+}
+
+/* https://stackoverflow.com/questions/10522137/allowing-for-overflow-on-the-y-axis-while-hiding-overflow-on-the-x-axis */
+header{
+    background-image: linear-gradient(to top, rgb(54, 38, 39, 0), rgb(54, 38, 39, 1));
+}
+
+#cover-page{
+    position: relative;
+    overflow: visible;
+}
+
+#cover-page .plaid-cover{
+    position: absolute;
+    z-index: -1000;
+    width: 160%;
+    top: -800px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 1750px;
+} 
+
+
+
+#cover-page .page-title{
+    font-size: 150px;
+    display: block;
+    margin: 200px auto;
+    text-align: center;
+    color: rgb(239, 233, 80);
+}
+
+#info {
+    max-width: 600px;
+    width: 70%; 
+    margin: 0 auto; 
+    margin-bottom: 250px;
+    padding: 20px; 
+    border: 2px solid yellow; 
+    text-align: center; 
+}
+
+#info a{
+    text-decoration: none;
+    color:rgb(239, 233, 80) ;
+}
+
+#info a:hover{
+    text-decoration: underline;
+    color:rgb(239, 233, 80) ;
+}
+
+#info a:active{
+    color: rgb(165, 99, 100);
+}
+
+#info   p{
+    font-size: 1.2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media(max-width: 1220px){
+    #cover-page .plaid-cover{
+       
+    }
+
+}
+
+@media(max-width: 975px){
+    #cover-page .plaid-cover{
+        top: -600px;
+    }
+    #cover-page .page-title{
+        font-size: 5em;
+    }
+    #info{
+        margin-bottom: 100px;
+    }
+
+}
+
+@media(max-width: 600px){
+    #cover-page .plaid-cover{
+        top: -300px;
+    }
+    #cover-page .page-title{
+        font-size: 5em;
+    }
+    #info{
+        margin-bottom: 100px;
+    }
+
+}
+
+@media(max-width: 450px){
+    #cover-page .plaid-cover{
+        top: -200px;
+    }
+    #cover-page .page-title{
+        font-size: 5em;
+        margin-bottom: 150px;
+    }
+    #info{
+        margin-bottom: 100px;
+    }
+
+}

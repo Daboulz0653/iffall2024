@@ -1,0 +1,199 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100px;
+    padding: 0px;
+    z-index: 1001;
+    margin: auto;
+}
+
+
+
+nav1{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.left, .right{
+    flex: 1;
+}
+
+nav1 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav1 ul li{
+    display: inline;
+    padding: 30px;
+}
+
+nav1 .center img{
+    width: 70px;
+}
+
+nav1 ul li a {
+    color: rgb(239, 233, 80);
+    text-decoration: none;
+    font-size: 1.31em;
+    margin: 0px 0px 0px 0px;
+}
+
+
+footer {
+    margin-top: 80px;
+    padding: 10px;
+    background-color:rgb(239, 233, 80) ;
+}
+
+footer a{
+    text-decoration: none;
+}
+footer img{
+    display: block;
+    margin: 0 auto;
+    width: 70px
+}
+
+nav2{   
+    display: none;
+    padding: 10px;
+}
+
+nav2 a img {
+    display: block;
+    max-width: 80px;
+    width: 3.5em;
+    margin: 10px auto;
+}
+
+
+/* This "drawer" is my main container. In it there is a button to control it, and the contents which open and close */
+#drawer {	
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 250px;
+    height: 30px;
+
+
+}
+
+
+
+/* This is the button element, with the class "controls" that users will click on in order to open and close the contents */
+#drawer button.controls {			
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    
+
+}
+
+#drawer button.controls i { 
+    font-size: 2em; 
+    color: rgb(239, 233, 80);
+
+
+}
+/* This :after pseudoelement is actually what adds the words "open +" to the button. You'll notice that the only contents in the button HTML are the FontAwesome hamburger icon */
+#drawer button.controls:after {			
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+/* When the parent #drawer element has the .open class applied, we change the button :after pseudoelement text from "open +" to "close -" */
+
+
+/* Here we are just positioning the FontAwesome hamburger icon */
+#drawer button.controls .fa {			
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+
+/* This .contents element is what opens and closes when the user clicks the button. It has 0 height (and padding) when it's in its normally closed state */
+#drawer .contents {	
+    visibility: hidden;	
+    opacity: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+    transition: opacity .5s ease, visibility .5s ease;
+
+
+    
+}
+
+#drawer .contents ul{
+    list-style-type: none;
+    color: rgb(239, 233, 80);
+    width: 70%;
+
+}
+
+#drawer .contents ul li a {
+    color: rgb(239, 233, 80);
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+/* When the parent #drawer element has the .open class applied, we change the height and padding of the contents to reveal it. */
+#drawer.open .contents {
+    visibility: visible;	
+	
+    opacity: 1;    
+    height: 200px;
+}
+
+
+@media (max-width:975px){
+    nav1{
+        display: none;
+    }
+
+    nav2{
+        display: block;
+    }
+   
+} 
+
+
+footer {
+    margin-top: 80px;
+    padding: 10px;
+    background-color:rgb(239, 233, 80) ;
+}
+
+footer a{
+    text-decoration: none;
+}
+footer img{
+    display: block;
+    margin: 0 auto;
+    width: 70px
+}

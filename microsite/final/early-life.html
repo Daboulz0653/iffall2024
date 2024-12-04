@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nav-footer-style.css">
+    <link rel="stylesheet" href="styles/early_style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   
+    <script>
+        $(document).ready(function() {
+            // Load header and footer
+            $("#header").load("header.html", function() {
+
+                const element = document.querySelector("#header header"); element.style.backgroundImage = "linear-gradient(to top, rgba(0, 0, 0, 0), rgb(20, 20, 44, 1))";
+
+                const nav = document.querySelector("#drawer .contents ul"); 
+                nav.style.backgroundColor = "rgb(20, 20, 44, .5)";
+            });
+
+            // Load footer after header
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+    <title>VW-Early Life</title>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <section id="cover-page">
+        <img class="plaid-cover" src="images/red_plaid.png" alt="">
+        <h1 class="page-title">Early Life</h1>
+    </section>
+
+    <section id="info">
+
+        <div class="row">
+
+            <div class="text">
+                <h2> Early Years</h2>
+                <p>
+                    Westwood was born in Hollingworth, Cheshire, on 8 April 1941. She grew up in nearby Tintwistle, and was the daughter of Gordon Swire and Dora Swire (née Ball), who had married two years previously, two weeks after the outbreak of the Second World War. At the time of Vivienne's birth, her father was employed as a storekeeper in an aircraft factory; he had previously worked as a greengrocer.
+                </p>
+                
+                <p>
+            
+            
+                    In 1958, her family moved to Harrow, Greater London. Westwood took a jewellery and silversmith course at the University of Westminster, then known as the Harrow Art School, but left after one term, saying: "I didn't know how a working-class girl like me could possibly make a living in the art world". After taking a job in a factory and studying at a teacher-training college, she became a primary-school teacher. During this period, she created her own jewellery, which she sold at a stall on Portobello Road.
+                </p>
+                
+                <p>
+            
+                    In 1962, she met Derek Westwood, an apprentice at the Hoover factory, in Harrow. They married on 21 July 1962; Westwood made her own wedding dress. In 1963, she gave birth to a son, Benjamin.
+            
+                </p>
+
+                <p>
+                    Westwood's marriage to Derek ended after she met Malcolm McLaren. Westwood and McLaren moved to Thurleigh Court in Balham, where their son Joseph Corré was born in 1967.[19] Westwood continued to teach until 1971 and also created clothes which McLaren designed. McLaren became manager of the punk band the Sex Pistols, and subsequently the two garnered attention as the band wore Westwood's and McLaren's designs.
+                </p>
+
+            </div>
+            <img src="images/viv_olg3.png" alt="">
+        </div>
+
+        
+
+        <div class="row">
+            <div class="text">
+                <h2>Punk Rock</h2>
+                    <p>
+                        Westwood was one of the architects of the punk fashion phenomenon of the 1970s, saying "I was messianic about punk, seeing if one could put a spoke in the system in some way".[18] Westwood's emergence as a designer who made garments that reflected the economic, social, and political contexts of 1970s Britain coincided with a disillusioned youth, who developed a unique style of dress and musical expression which was instantly identifiable through its aesthetic and sound.
+                    <p>
+                        Westwood's boutique, originally managed with McLaren, was a meeting place for early members of the London punk scene. The boutique regularly changed names and interior design through the 1970s to fit with collections and design inspirations. It remains in its original location at 430 Kings Road, Chelsea, London (under the name Worlds End since 1980, following a short period of closure in the 1980s) to this day. 
+                    </p>
+
+                    <p>
+                        McLaren and Westwood were keen entrepreneurs, and their designs sold in their boutique – named Let It Rock, Too Fast To Live Too Young To Die, Sex, and subsequently Seditionares – helped to define and market the punk look at the exact moment that it exploded in popularity on the streets of London.
+                    </p>
+
+                    
+
+            </div>  
+            <img src="images/vivienne1top.jpg" alt="">
+        </div>
+
+]    </section>
+
+    <div id="footer"></div>
+
+</body>
+</html>

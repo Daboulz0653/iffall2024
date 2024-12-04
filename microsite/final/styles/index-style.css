@@ -1,0 +1,157 @@
+body{
+    background-color: #3f0f0f;
+    overflow: hidden;
+}
+
+/* https://stackoverflow.com/questions/10522137/allowing-for-overflow-on-the-y-axis-while-hiding-overflow-on-the-x-axis */
+
+
+#cover-page{
+    position: relative;
+    overflow: visible;
+}
+
+#cover-page .plaid-cover{
+    position: absolute;
+    z-index: -1000;
+    margin: -1200px 0px 0px 200px;
+    width: 160%;
+    transform: rotate(65deg);
+    max-width: 2000px;
+    justify-content: center;
+} 
+
+
+ 
+
+#cover-page .text-cover{
+    display: block;
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 110px;
+    max-width: 800px;
+}
+
+#cover-page .scroll-button{
+    display: block;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 10px;
+    transition: background-color 400ms ease-in-out;
+    text-align: center;
+}
+
+#cover-page .scroll-button i{
+    color: rgb(239, 233, 80) ;
+    font-size: 40px;
+
+}
+
+#cover-page .scroll-button:hover{
+    background-color:#601D1D;
+
+}
+
+/* Parent container styles */
+#info {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    max-width: 1300px; 
+    margin: 0 auto; 
+    margin-top: 90px;
+    padding: 50px;
+
+}
+
+/* Image styles */
+#info img {
+    max-width: 70%; 
+    height: auto;
+
+}
+
+/* Text styles */
+#info .text {
+    flex: 1; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 18px; 
+    line-height: 1.5; 
+    color: rgb(239, 233, 80); 
+    margin-top: 60px;
+}
+
+
+@media (max-width: 1750px) { 
+    #cover-page .plaid-cover{
+        margin: -1200px 0px 0px -50px;
+    }
+}
+@media (max-width: 1460px) { 
+    #cover-page .plaid-cover{
+        margin: -1300px 0px 0px 0px;
+    }
+}
+@media (max-width: 1080px) { 
+    #cover-page .plaid-cover{
+        margin: -1100px 0px 0px -200px;
+    }
+    #info { 
+        flex-direction: column;
+        gap: 10px;
+    } 
+    #info img { 
+        max-width: 100%;
+    }
+    #info .text {
+        margin-top: 20px;
+        width: 70%;
+    }
+}
+@media (max-width: 975px) { 
+    #cover-page .plaid-cover{
+        margin: -900px 0px 0px -200px;
+    }
+    
+}
+@media (max-width: 768px) { 
+    #cover-page .plaid-cover{
+        margin: -700px 0px 0px -200px;
+    }
+    #info { 
+        padding: 10px;
+    }
+    
+
+}
+
+@media (max-width: 600px) { 
+    #cover-page .plaid-cover{
+        margin: -400px 0px 0px -200px;
+    }
+    #info .text {
+        font-size: 16px; 
+        width: 80%;
+    }
+}
+
+@media(max-width: 400px){
+    #cover-page .plaid-cover{
+        margin: -200px 0px 0px -100px;
+    }
+    #cover-page .text-cover{
+        width: 90%;
+    }
+    #info .img { 
+        width: 100%;
+    }
+    #info .text {
+        font-size: 14px; 
+        width: 80%;
+        margin-top: 0px;
+    }
+}

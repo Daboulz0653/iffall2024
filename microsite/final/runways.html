@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nav-footer-style.css">
+    <link rel="stylesheet" href="styles/runway_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Aref+Ruqaa:wght@400;700&family=Gothic+A1&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html", function() {
+
+                const element = document.querySelector("#header header"); element.style.backgroundImage = "linear-gradient(to top, rgba(0, 0, 0, 0), rgb(39, 24, 54, 1))";
+
+                const nav = document.querySelector("#drawer .contents ul"); 
+                nav.style.backgroundColor = "rgb(39, 24, 54, .5)";
+            });
+
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+
+    <title>VW-Runways</title>
+</head>
+<body>
+    <div id="header"></div>
+
+
+    <section id="cover-page">
+        <img class="plaid-cover" src="images/tie2.png" alt="">
+        <h1 class="page-title">Runways</h1>
+    </section>
+
+
+    <section id="info">
+
+        <h2>
+            The Vivienne Westwood style has evovled signficatly since she began designing in the early 1970s. Originally characterized by a rebellious usage of material and style, Westwood was instrumental in the the prominence of the punk aesthetic in the early 1970s. Her designs later became more romantic, with the incorporation of renaissance paintings, corsetry and structured garments, and exxagerated silhouttes. In the 2000s, Westwood picked up on environmental activism, and many of her designs began to feature political slogans. Look below for a gallery of some of her most famous looks:     
+        </h2>
+
+        <section class="grid-container">
+            <div class="item">
+                <img src="images/GettyImages-1255034023.webp" alt="">
+                <p class="words">
+
+                    The 1981 Pirate collection was Vivienne Westwood and Malcolm McLaren’s first official collaborative catwalk show. It informed the aesthetic of the World’s End boutique with its ship features.
+                    Photograph: David Corio/Redferns
+                </p>
+
+            </div>
+            <div class="item">
+                <img src="images/1981_Vivienne_Westwood_and_Malcolm_McLaren_dress_and_sash,_Pirates_collection.jpg" alt="">
+                <p class="words">Vivienne Westwood and Malcolm McLaren hand screen-printed cotton dress and sash, Pirate collection, 1981</p>
+            </div>
+            <div class="item">
+                <img src="images/440px-Vivienne_Westwood_Mini_Crini.jpg" alt="">
+                <p class="words">The Mini-Crini, an abbreviated version of the Victorian Crinoline. The mini-crini was described in 1989 as a combination of two conflicting ideals - the crinoline, representing a "mythology of restriction and encumbrance in woman's dress", and the miniskirt, representing an "equally dubious mythology of liberation"</p>
+            </div>
+            
+            <div class="item">
+                <img src="images/3592.webp" alt="">
+                <p class="words">Spring/summer 1991, Paris
+                    British fashion model Sarah Stockbridge on the catwalk at the Vivienne Westwood ready-to-wear fashion show.</p>
+            </div>
+
+            <div class="item">
+                <img src="images/Heritage_Corset_IC_1_3.jpg" alt="">
+                <p class="words">Iconic Vivienne Westwood corset from the 'Portrait Collection' autumn-winter 1990. Features the François Boucher oil painting 'Daphnis and Chloe' c. 1743.</p>
+            </div>
+
+            <div class="item">
+                <img src="images/gettyimages-552076679-1672398126.jpg" alt="">
+                <p class="words">
+                    Naomi Campbell walks the runway in Vivienne Westwood during Paris Fashion Week in 1994. 
+
+                </p>
+            </div>
+
+            <div class="item">
+                <img src="images/05-vivienne-westwood-activist-moments.webp" alt="">
+                <p class="words">
+                    Spring/Summer 2016 Red Label collection, with models carrying placards declaring “Austerity is a crime” and “Fracking is a crime”. Environmental issues were a longtime focus for the designer, from the “Climate Revolution” banner unfurled at the end of her spring/summer 2013 show, to the climate change zombies that walked the catwalk for spring/summer 2014.
+
+                </p>
+            </div>
+             
+            <div class="item">
+                <img src="images/3237.webp" alt="">
+                <p class="words">Autumn/winter 2020-21, Paris
+                    In a tribute on her Instagram following the death of Westwood, Bella Hadid wrote: “From the first day I met you to the last day I saw you, you made me smile, listen, learn and love more than the day before. I will forever be grateful to have been in your orbit, because to me and most , in fashion & in humanity, you, Vivienne, were the sun.”</p>
+            </div>
+
+            
+            
+        </section>
+        
+
+    </section>
+
+    <div id="footer"></div>
+
+</body>
+</html>

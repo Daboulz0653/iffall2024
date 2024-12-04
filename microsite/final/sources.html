@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nav-footer-style.css">
+    <link rel="stylesheet" href="styles/sources_style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html", function() {
+
+                const element = document.querySelector("#header header"); element.style.backgroundImage = "linear-gradient(to top, rgba(0, 0, 0, 0), rgb(54, 38, 39, 1))";
+
+                const nav = document.querySelector("#drawer .contents ul"); 
+                nav.style.backgroundColor = "rgb(54, 38, 39, .5)";
+            });
+
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <title>VW-Sources</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    
+    <section id="cover-page">
+        <img class="plaid-cover" src="images/orange.png" alt="">
+        <h1 class="page-title">Sources</h1>
+    </section>
+
+    <section id="info">
+        <p><a href="https://en.wikipedia.org/wiki/Vivienne_Westwood">Vivienne Westwood: Wikipedia</a>
+        <p><a href="https://www.viviennewestwood.com/en-us/home/">Vivienne Westwood Online Store</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Sex_(boutique)#Seditionaries">Sex Boutique: Wikipedia</a>
+        <p><a href="https://wwd.com/fashion-news/fashion-features/gallery/vivienne-westwood-collections-photos-1236303969/paris-fashion-weeks-in-the-1990s-5/">Vivienne Westwood's Most Iconic Collections: Photos</a></p>
+        <p><a href="https://www.viviennewestwood.com/en-us/westwood-world/the-story-so-far/?srsltid=AfmBOop9Wl76TBoBJN0OVMMVEwqXAnKVXigs13moTwing_8iDHDFj4uS">Westwood World: The Story so Far</a></p>
+
+        <p><a href="https://magazine.luxus-plus.com/en/a-brief-history-of-luxury-vivienne-westwood-queen-of-punk-fashion/">A Brief History of Luxury: Vivienne Westwood, Queen of Punk Fashion</a></p>
+
+        <p><a href="https://www.theguardian.com/fashion/gallery/2022/dec/30/vivienne-westwood-best-looks-in-pictures">Vivienne Westwood's best looks-in pictures</a></p>
+
+    </section>
+
+
+    <div id="footer"></div>
+
+</body>
+</html>

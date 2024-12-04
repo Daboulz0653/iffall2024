@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(39, 24, 54);
+    overflow: hidden;
+}
+
+/* https://stackoverflow.com/questions/10522137/allowing-for-overflow-on-the-y-axis-while-hiding-overflow-on-the-x-axis */
+
+#cover-page{
+    position: relative;
+    overflow: visible;
+}
+
+#cover-page .plaid-cover{
+    position: absolute;
+    z-index: -1000;
+    margin: -200px auto;
+    width: 100%;
+} 
+
+
+
+#cover-page .page-title{
+    font-size: 150px;
+    display: block;
+    margin: 200px auto;
+    text-align: center;
+    color: rgb(239, 233, 80);
+}
+
+
+#info  h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;        
+    width: 50%;                
+    margin: 30px auto;         
+    line-height: 1.4;          
+    font-size: 1.5em;           
+    color: rgb(239, 233, 80); 
+    background-color: rgba(39, 24, 54, .5);
+    padding: 10px;
+
+}
+
+.grid-container {
+    background-color: rgba(39, 24, 54, .5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+    width: 70%;
+    margin: 0 auto;
+}
+
+.grid-container .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-container img {
+    width: 100%;  
+    height: 100%;
+    object-fit: cover; 
+}
+
+.grid-container .words{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(39, 24, 54, .5);
+    color: rgb(239, 233, 80);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    padding: 40px;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+
+
+.item:hover .words {
+visibility: visible;
+opacity: 1;
+}
+
+
+@media(max-width: 975px){
+    #cover-page .page-title{
+        font-size: 5em;
+    }
+
+    #info h2{
+        font-size: 1em;
+    }
+
+    .grid-container .words{
+        padding: 2px;
+        font-size: px;
+    }
+}
+@media(max-width: 600px){
+    #cover-page .page-title{
+        font-size: 4.5em;
+        margin-bottom: 150px;
+
+    }
+
+    #info h2{
+        font-size: .9em;
+        width: 70%;
+    }
+
+    .grid-container .words{
+        padding: 7px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 400px){
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); 
+
+    }
+
+    .grid-container .words{
+        padding: 20px;
+        font-size: 16px;
+    }
+}

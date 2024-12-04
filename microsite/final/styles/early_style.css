@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(20, 20, 44);
+}
+
+/* https://stackoverflow.com/questions/10522137/allowing-for-overflow-on-the-y-axis-while-hiding-overflow-on-the-x-axis */
+header{
+    background-image: linear-gradient(to top, rgb(20, 20, 44, 0), rgb(20, 20, 44, 1));
+}
+
+#cover-page{
+    position: relative;
+    overflow: visible;
+}
+
+#cover-page .plaid-cover{
+    position: absolute;
+    z-index: -1000;
+    margin: -1300px auto ;
+    width: 100%;
+} 
+
+
+
+#cover-page .page-title{
+    font-size: 150px;
+    display: block;
+    margin: auto;
+    padding: 200px 0px;
+    /* padding: 200px; */
+    text-align: center;
+    color: rgb(239, 233, 80);
+}
+
+
+#info .row {
+    width: 85%;
+    max-width: 1440px;
+    display: flex; 
+    align-items: flex-start; 
+    gap: 150px; 
+    margin: 100px auto; 
+    justify-content: center;
+}
+
+.row img {
+    padding-top: 0px;
+    width: 50%;
+    height: auto; 
+    border-radius: 8px; 
+
+}
+
+.row .text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex: 1; 
+    color: rgb(239, 233, 80); 
+    font-size: 18px;
+    line-height: 1.4; 
+    max-width: 550px;
+}
+
+
+
+#info img{
+    justify-content: center;
+}
+
+@media(max-width: 2000px){
+    #cover-page .plaid-cover{
+        margin: -900px auto;
+    }
+
+
+}
+@media(max-width: 1600px){
+    #cover-page .plaid-cover{
+        margin: -700px auto;
+    }
+}
+
+@media(max-width: 1200px){
+    #cover-page .plaid-cover{
+        margin: -500px auto;
+    }
+
+    #info .row {
+        gap: 75px;
+    }
+
+    .row .text {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 975px){
+    #cover-page .page-title{
+        font-size: 5em;
+    }
+    #cover-page .plaid-cover{
+        margin: -300px auto;
+    }
+
+    #info .row{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .row img {
+        padding-top: 0px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    
+}
+
+
+@media(max-width: 600px){
+    #cover-page .page-title{
+        font-size: 4.5em;
+
+    }
+    #cover-page .plaid-cover{
+        margin: -50px auto;
+    }
+
+}
+
+@media(max-width: 400px){
+    #cover-page .plaid-cover{
+        margin: 0px auto;
+    }
+    #cover-page .page-title{
+        font-size: 4em;
+    }
+}
+
+@media(max-width: 351px){
+    #cover-page .plaid-cover{
+        margin: 0px auto;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   
+    <script>
+        $(document).ready(function() {
+            // Load header and footer
+            $("#header").load("header.html", function() {
+
+                const element = document.querySelector("#header header"); element.style.backgroundImage = "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(19, 27, 23, 1))";
+
+                const nav = document.querySelector("#drawer .contents ul"); 
+                nav.style.backgroundColor = "rgba(19, 27, 23, .5)";
+
+                
+            });
+
+            // Load footer after header
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <link rel="stylesheet" href="styles/nav-footer-style.css">
+    <link rel="stylesheet" href="styles/legacy_style.css">
+
+    <title>VW-Legacy</title>
+</head>
+<body>
+
+    
+    <div id="header"></div>
+    
+
+    <section id="cover-page">
+        <img class="plaid-cover" src="images/green.png" alt="">
+        <h1 class="page-title">Legacy</h1>
+    </section>
+
+    <section id="info">
+
+        <div class="row">
+            <img src="images/1117212.jpg" alt="">
+
+            <div class="text">
+                <p>
+                    For Westwood, fashion was always intertwined with politics. Throughout her career, she consistently used her large platform to advocate for political causes. Early on, in April 1989, Westwood appeared on the cover of Tatler dressed as Prime Minister Margaret Thatcher. The suit that Westwood wore had been ordered for Thatcher but not yet delivered. The cover, which bore the caption "This woman was once a punk", was included in The Guardian list of the best ever UK magazine covers.
+                </p>
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="text">
+                
+                <p>
+                    In September 2005, Westwood joined forces with the British civil rights group Liberty and launched exclusive limited design T-shirts and baby wear bearing the slogan I AM NOT A TERRORIST, please don't arrest me. She said she was supporting the campaign and defending habeas corpus. "When I was a schoolgirl, my history teacher, Mr. Scott, began to take classes in civic affairs. The first thing he explained to us was the fundamental rule of law embodied in habeas corpus. He spoke with pride of civilisation and democracy. The hatred of arbitrary arrest by the lettres de cachet of the French monarchy caused the storming of the Bastille. We can only take democracy for granted if we insist on our liberty", she said.
+                </p> 
+
+            </div>  
+            <img src="images/vivienne-westwood-440nw-551274f.jpg" alt="">
+        </div>
+
+        <div class="text_container">
+
+            <div class="imp_text">
+                <p>Vivienne’s work had always been political, but beginning in the 2000s, the political element overtook fashion as the primary element of work. While in the early years, her politics were based on punk’s anti-establishment ideology, climate change became Vivienne’s core issue: “Climate change, not fashion, is now my priority,” she said in 2014.
+                </p>    
+                <p>
+    
+                    In 2008, she cut off her hair to highlight the dangers of climate change. She also appeared in a PETA ad campaign to promote World Water Day and vegetarianism, drawing attention to the meat industry's water consumption.
+                </p>
+                <p>
+                In 2018, she collaborated with Burberry on a fundraising collection for the climate NGO Cool Earth and donated over 1.5 million Euros to the cause. Furthermore, Vivienne Westwood's mainline became fully digital to support the environment in 2019. 
+    
+                </p>
+                <p>Vivienne Westwood's pieces continue to be seen all over the world in pop culture, whether it's Bella Hadid, FKA Twigs, Dua Lipa, or Blackpink’s Lisa– her legacy of both art and activism will assuredly continue to influence the young and old.</p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="content">
+                <!-- Slideshow section containing carousel images and control buttons -->
+                <div class="slideshow">
+                    <button class="slide-btn slide-btn-1"></button>
+                    <button class="slide-btn slide-btn-2"></button>
+                    <button class="slide-btn slide-btn-3"></button>
+                    <button class="slide-btn slide-btn-4"></button>
+                    <button class="slide-btn slide-btn-5"></button>
+                    <button class="slide-btn slide-btn-6"></button>
+                    <button class="slide-btn slide-btn-7"></button>
+    
+                    <div class="slideshow-wrapper">
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/footer.webp">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/original.webp"
+                                alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/499f.avif"
+                                alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/vivienne-westwood-show_dezeen_2364_col_10-1-1704x2558.webp"
+                                alt="Image 4">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/vivienne-westwood-show_dezeen_2364_col_20-1704x2558.webp"
+                                alt="Image 4">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/4ab0d2623b681da40c99b8730d4f375168b433ba.jpg"
+                                alt="Image 4">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/05-vivienne-westwood-activist-moments.webp"
+                                alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+    <div id="footer"></div>
+
+</body>
+</html>
