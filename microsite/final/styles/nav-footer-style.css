@@ -57,21 +57,11 @@ nav1 ul li a {
     margin: 0px 0px 0px 0px;
 }
 
+nav1 ul li a:hover {
+    text-decoration: underline;
 
-footer {
-    margin-top: 80px;
-    padding: 10px;
-    background-color:rgb(239, 233, 80) ;
 }
 
-footer a{
-    text-decoration: none;
-}
-footer img{
-    display: block;
-    margin: 0 auto;
-    width: 70px
-}
 
 nav2{   
     display: none;
@@ -162,25 +152,16 @@ nav2 a img {
     font-size: 1.3em;
 }
 
+#drawer .contents ul li a:hover {
+    text-decoration: underline;
+}
+
 /* When the parent #drawer element has the .open class applied, we change the height and padding of the contents to reveal it. */
 #drawer.open .contents {
     visibility: visible;	
-	
     opacity: 1;    
     height: 200px;
 }
-
-
-@media (max-width:975px){
-    nav1{
-        display: none;
-    }
-
-    nav2{
-        display: block;
-    }
-   
-} 
 
 
 footer {
@@ -197,3 +178,24 @@ footer img{
     margin: 0 auto;
     width: 70px
 }
+
+@media (max-width:975px){
+    nav1{
+        display: none;
+    }
+
+    nav2{
+        display: block;
+    }
+
+    footer{
+        padding: 5px;
+    }
+
+    footer img{
+        width: 60px;
+    }
+   
+} 
+
+

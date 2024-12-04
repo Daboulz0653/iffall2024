@@ -30,7 +30,8 @@ body{
 
 #info  h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;        
+    text-align: center;   
+    font-weight: normal;     
     width: 50%;                
     margin: 30px auto;         
     line-height: 1.4;          
